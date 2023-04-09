@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="main.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,500;1,600;1,700&family=Roboto:ital,wght@0,100;0,400;0,500;1,300&family=Sono:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <title>Hangman Game</title>
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <h3>Hangman Game</h3>
+        <h3>
+          Word From :
+          <span></span>
+        </h3>
+      </header>
+      <section class="content">
+        <div class="hangman-draw">
+          <div class="draw">
+            <div class="stand"></div>
+            <div class="hang"></div>
+            <div class="rope"></div>
+            <div class="man">
+              <div class="head"></div>
+              <div class="body"></div>
+              <div class="arms"></div>
+              <div class="legs"></div>
+            </div>
+          </div>
+        </div>
+        <div class="generate-latters"></div>
+      </section>
+      <section class="generate-spans"></section>
+      <footer>Made with Love by AbdallaMon</footer>
+      <audio
+        id="success"
+        src="audio/success-fanfare-trumpets-6185.mp3"
+        preload="auto"
+      ></audio>
+      <audio id="wrong" src="audio/wrong-47985.mp3" preload="auto"></audio>
+      <audio id="fail" src="audio/fail-144746.mp3" preload="auto"></audio>
+    </div>
+    <script src="main.js"></script>
+    <script src="main.json"></script>
+  </body>
+</html>
